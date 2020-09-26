@@ -23,6 +23,7 @@ Visit the [Spacecoin RPC Docs](http://spacecoin-rpc.spaceworks.co) to see all of
    - https://spaceworks.co/spacecoin
    - https://twitter.com/SpacecoinSPACE
    - https://github.com/SpaceWorksCo/spacecoin
+   - https://spaceworks.co/discord
 
 
-Thanks to [nail/docker-komodo](https://github.com/naei/docker-komodo)
+Thanks to [naei/docker-komodo](https://github.com/naei/docker-komodo)
