@@ -5,9 +5,9 @@ Run [Spacecoin](https://github.com/spaceworksco/spacecoin) daemon in a docker co
 ### Quick start
 
 1. Edit SPACE.conf with your configuration, if necessary.
-2. Build `docker build -t spaceworksco/spacecoin .`
+2. Build `docker build -t spaceworksco/spacecoin . --file Dockerfile`
 3. Run `docker run -it -v ~/.SPACE:/root/.komodo/SPACE spaceworksco/spacecoin`  
-   (replace `~/.SPACE` by the path in your host in which you want to sync all your data)
+   (replace `~/.SPACE` with the path in your host in which you want to sync all your data)
 
 ### Useful commands
 
