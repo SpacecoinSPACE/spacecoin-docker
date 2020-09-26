@@ -3,11 +3,11 @@ FROM ubuntu:16.04
 RUN \
   # install Spacecoin based on https://github.com/spaceworksco/spacecoin documentation
   apt-get update && \
-  apt-get install -y nano build-essential dnsutils pkg-config libcurl4-gnutls-dev libc6-dev libevent-dev m4 g++-multilib autoconf libtool libncurses5-dev unzip git python zlib1g-dev wget bsdmainutils automake libboost-all-dev libssl-dev libprotobuf-dev protobuf-compiler libqt4-dev libqrencode-dev libdb++-dev ntp ntpdate && \
+  apt-get install -y nano curl build-essential dnsutils pkg-config libcurl4-gnutls-dev libc6-dev libevent-dev m4 g++-multilib autoconf libtool libncurses5-dev unzip git python zlib1g-dev wget bsdmainutils automake libboost-all-dev libssl-dev libprotobuf-dev protobuf-compiler libqt4-dev libqrencode-dev libdb++-dev ntp ntpdate && \
   cd ~ && git clone https://github.com/spaceworksco/spacecoin && \
   cd spacecoin && \
   ./zcutil/fetch-params.sh && \
-  ./zcutil/build.sh -j$(nproc)
+  ./zcutil/build.sh -j`nproc`
 
 ADD SPACE.conf /root/SPACE.conf.default
 
