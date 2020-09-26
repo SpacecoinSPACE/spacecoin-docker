@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Docker Artifact CI
 
 on:
   push:
