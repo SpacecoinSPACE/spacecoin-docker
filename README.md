@@ -4,10 +4,10 @@ Run [Spacecoin](https://github.com/spaceworksco/spacecoin) daemon in a docker co
 
 ### Quick start
 
-1. Edit SPACE.conf with your configuration, if necessary.
-2. Build `docker build -t spaceworksco/spacecoin . --file Dockerfile`
-3. Run `docker run -it -v ~/.SPACE:/root/.komodo/SPACE spaceworksco/spacecoin`  
-   (replace `~/.SPACE` with the path in your host in which you want to sync all your data)
+1. Build `docker build -t spaceworksco/spacecoin . --file Dockerfile`
+2. Run `docker run -it -v ~/.SPACE:/root/.komodo/SPACE spaceworksco/spacecoin`
+
+If you'd like to add a custom SPACE.conf file, place it in the /root/.komodo/SPACE directory.
 
 ### Useful commands
 
@@ -24,6 +24,7 @@ Visit the [Spacecoin RPC Docs](http://spacecoin-rpc.spaceworks.co) to see all of
    - https://twitter.com/SpacecoinSPACE
    - https://github.com/SpaceWorksCo/spacecoin
    - https://spaceworks.co/discord
+   - https://spaceworks.co/telegram
 
 
 Thanks to [naei/docker-komodo](https://github.com/naei/docker-komodo)
